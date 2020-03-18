@@ -17,3 +17,12 @@ class AddTest(unittest.TestCase):
 
     def test_split_on_newline(self):
         self.assertEqual(Add("1\n2"), 3)
+
+    def test_ignore_bigger_1000(self):
+        self.assertEqual(Add("1001,2"), 2)
+
+    def test_negative_numbers(self):
+        pass
+
+    def test_different_delimiters(self):
+        self.assertEqual(Add("//%\n1%2%3"), 6)
