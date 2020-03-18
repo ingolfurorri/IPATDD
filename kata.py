@@ -1,4 +1,4 @@
-def add(num):
+def Add(num):
     if num == "":
         return ""
 
@@ -15,6 +15,6 @@ def crosssum(num_list):
         crosssum += num_list[n]
     return crosssum
 
-print(add("1,2"))
-print(add("1"))
-print(add("10,2,5,22,1,1"))
+print(Add("1,2"))
+print(Add("1"))
+print(Add("10,2,5,22,1,1"))

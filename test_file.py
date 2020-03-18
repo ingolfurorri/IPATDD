@@ -1,13 +1,16 @@
 import unittest
-from kata import add 
+from kata import Add 
 
 class AddTest(unittest.TestCase):
 
     def test_empty(self):
-        self.assertEqual(add(""), "")
+        self.assertEqual(Add(""), "")
     
     def test_single_num(self):
-        self.assertEqual(add("1"), 1)
+        self.assertEqual(Add("1"), 1)
     
     def test_two_num(self):
-        self.assertEqual(add("1,2"), 3)
+        self.assertEqual(Add("1,2"), 3)
+
+    def test_unknown_numbers(self):
+        self.assertEqual(Add("10,2,5,22,1,1"), 41)
