@@ -22,7 +22,7 @@ class AddTest(unittest.TestCase):
         self.assertEqual(Add("1001,2"), 2)
 
     def test_negative_numbers(self):
-        pass
+        self.assertEqual(Add("-1,2"), 2)
 
     def test_different_delimiters(self):
         self.assertEqual(Add("//%\n1%2%3"), 6)

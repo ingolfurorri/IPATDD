@@ -40,5 +40,5 @@ print(Add("//p\n1p2"))
 print(Add("1"))
 print(Add("10,2,5,22,1,1"))
 print(Add("1\n 2"))
-print(Add("1,2"))
+print(Add("-1,2"))
 
