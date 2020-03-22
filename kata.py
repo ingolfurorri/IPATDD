@@ -34,11 +34,3 @@ def crosssum(num_list):
     for n in num_list:
         crosssum += n if n < 1001 else 0
     return crosssum
-
-print(Add(""))
-print(Add("//p\n1p2"))
-print(Add("1"))
-print(Add("10,2,5,22,1,1"))
-print(Add("1\n 2"))
-print(Add("-1,2"))
-
